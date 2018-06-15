@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: blue;
+    text-decoration: none;
+}
+html,body,.wrapper,.bg{
+    width: 100%;
+    height: 100%;
+}
+.wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.wrapper .login-in{
+    width: 100px;
+    height: 100px;
+    margin: 100px auto 0;
+}
+.wrapper .login-in a{
+    font-size: 30px;
+}
+.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #f0f0f0;
+    z-index: 10000;
+}
+.bg .content{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -200px;
+    width: 400px;
+    background-color: white;
+    position: relative;
+}
+.content .hover-move{
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: move;
+    z-index: 2;
+    /* border: 1px solid #000; */
+}
+.content .header{
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+}
+.header .logo{
+    display: inline-block;
+    margin-left: 20px;
+    width: 106px;
+    height: 30px;
+    background-image: url(image/loginlogo.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header .title{
+    display: inline-block;
+    margin-left: 10px;
+}
+.header .close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 16px;
+    height: 16px;
+    background-image: url(image/pass_login_icons.png);
+    background-position: -56px -48px;
+}
+.header .close-btn:hover{
+    background-position: -72px -48px;
+}
+.content .login-content{
+    width: 100%;
+    margin-top: 30px;
+}
+.login-content .scale{
+    width: 160px;
+    height: 160px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+}
+.login-content .scale img{
+    width: 140px;
+    height: 140px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.login-content .scale-des{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+.login-content .scale-ad{
+    margin: 20px 40px 0 40px;
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: center;
+}
+.scale-ad span{
+    flex-grow: 1;
+    font-size: 12px;
+    line-height: 20px;
+    color: #ddd;
+    text-align: center;
+}
+.scale-ad span::before{
+    display: inline-block;
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+.scale-ad .safe::before{
+    background-image: url(image/loginv4.png);
+    background-position: -5px -3px;
+}
+.scale-ad .eff::before{
+    background-image: url(image/loginv4.png);
+    background-position: -28px -3px;
+}
+.scale-ad .convi::before{
+    background-image: url(image/loginv4.png);
+    background-position: -48px -3px;
+}
+.login-footer{
+    margin-top: 30px;
+    padding: 20px 30px;
+    background-color:rgba(99, 146, 233, 0.1);
+}
+.login-footer .login-way{
+    float: left;
+    font-size: 14px;
+}
+.login-way a{
+    font-size: 14px;
+}
+.login-way a::after{
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 8px;
+    background-color: blue;
+    margin: 0 8px;
+}
+.login-way .login-qq,.login-wb{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: bottom;
+    background-image: url(image/loginv4.png);
+    margin-right: 5px;
+}
+.login-way .login-qq{
+    background-position: -9px -54px;
+}
+.login-way .login-wb{
+    background-position: -57px -113px;
+}
+.register{
+    float: right;
+}
+.register a{
+    font-size: 14px;
+}
+.login-footer::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+.input-wrapper{
+    margin: 30px 30px 0 30px;
+}
+.username,.password{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid blue;
+}
+.login-auto{
+    font-size: 12px;
+    color: blue;
+}
+.login-btn{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: blue;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.another{
+    margin: 10px 30px 0 30px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}

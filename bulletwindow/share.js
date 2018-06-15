@@ -1,0 +1,16 @@
+$('#share-btn').on('click',function(){
+    $('#share-content').show();
+    $('#changebg').show();
+    $('#share-btn').children(1).css({
+        'background-color':'#fff',
+        'color':'#84c017'
+    })
+});
+$('#close-btn').on('click',function(){
+    $('#share-content').hide();
+    $('#changebg').hide();
+    $('#share-btn').children(1).css({
+        'background-color':'transparent',
+        'color':'-webkit-link'
+    })
+})

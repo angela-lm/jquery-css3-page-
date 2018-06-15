@@ -1,0 +1,165 @@
+body,div,ul,li,h3,span{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+span{
+    display: inline-block;
+}
+body{
+    background-color: rgb(240,240,240);
+}
+.changeBg{
+    width: 100%;
+    height: 1000px;
+    background-color: #c3c3c3;
+    display: none;
+    z-index: -1;
+}
+.wrapper{
+    width: 700px;
+    height: 600px;
+    position: fixed;
+    top:50px;
+    left: 200px;
+}
+.header-title {
+    font-size:30px;
+    font-weight: 600;
+    text-align: center;
+    color: #6e6e6e;
+    margin-bottom:20px;
+}
+.share{
+    width: 100%;
+    border-top: 2px dashed #cecece;
+    /*border:1px solid #000;*/
+    border-radius:6px;
+    position: relative;
+}
+.shareBtn{
+    margin-top: 10px;
+    text-align: center;
+    /*border: 1px dashed #cecece;*/
+}
+.shareBtn a{
+    font-size: 16px;
+    padding:15px 20px;
+    border: 1px dashed #cecece;
+}
+.share-content{
+    height:200px;
+    width: 500px;
+    background-color: #ffffff;
+    margin: 14px auto;
+    border-radius:30px;
+    position:relative;
+    box-shadow:#6e6e6e 2px 1px 4px;
+    display: none;
+    /*border: 1px dashed #cecece;*/
+}
+.share-content::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: -20px;
+    left:240px;
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+    border-top:10px solid transparent;
+    border-bottom:10px solid #ffffff;
+}
+.share-title{
+    width: 80%;
+    line-height: 30px;
+    padding:20px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #84c017;
+    font-weight: 600;
+    border-bottom: 1px solid #ccc;
+    /*border: 1px dashed #cecece;*/
+}
+.close-share{
+    width: 30px;
+    height: 30px;
+    display:inline-block;
+    position: absolute;
+    right:30px;
+    top: 20px;
+    background: url(closeBtn.png) 0 0 no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+}
+.close-share:hover{
+    background-position: 0 -31px;
+}
+.share-community{
+    width:80%;
+    /*border: 1px dashed #cecece;*/
+    margin:20px auto;
+}
+.share-community::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.share-community li{
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-left: 12px;
+    position: relative;
+    /*border: 1px solid #6e6e6e;*/
+}
+.share-community li span::after{
+    content: "";
+    display: block;
+    width: 28px;
+    height: 10px;
+    position: absolute;
+    top: 55px;
+    left: 11px;
+    background: url(share_shade.png) no-repeat;
+    background-size: 28px;
+    transition: all 0.5s ease-in-out;
+}
+.share-community li:hover span::after{
+    opacity: 0.2;
+}
+.share-community li span{
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    /*border: 1px solid #6e6e6e;*/
+    margin-left:11px;
+    margin-top: 22px;
+    transition: all .5s ease-in-out;
+}
+.share-community li:hover span{
+    margin-top: 10px;
+}
+.share-qq{
+    background:url(sharePic.png)0 0 no-repeat;
+}
+.share-weibo{
+    background:url(sharePic.png) -28px 0 no-repeat;
+}
+.share-renren{
+    background:url(sharePic.png) -56px 0 no-repeat;
+}
+.share-wechat{
+    background:url(weixin.png) 0 0 no-repeat;
+}
+.share-qqweibo{
+    background:url(sharePic.png) -84px 0 no-repeat;
+}
+.share-maopu{
+    background:url(sharePic.png) -112px 0 no-repeat;
+}
